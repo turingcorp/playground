@@ -30,12 +30,6 @@ class TestLruCache:XCTestCase {
         XCTAssertEqual(-1, cache.get(key:"a"))
     }
     
-    func testGetKey() {
-        let cache = LruCache(size:1)
-        cache.set(key:"a", value:5)
-        XCTAssertEqual(5, cache.get(key:"a"))
-    }
-    
     func testReleaseCapacity() {
         let cache = LruCache(size:1)
         cache.set(key:"a", value:3)
