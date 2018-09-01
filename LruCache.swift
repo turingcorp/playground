@@ -9,7 +9,7 @@ class LruCache {
     }
     
     func get(key:String) -> Int {
-        guard let index = cache.firstIndex(where: { (item, value) -> Bool in return item == key } ) else { return -1 }
+        guard let index = cache.firstIndex(where: { (item, _) -> Bool in return item == key } ) else { return -1 }
         let item = cache.remove(at:index)
         cache.insert(item, at:0)
         return item.1
@@ -19,7 +19,7 @@ class LruCache {
         cache.removeAll { (item, _) -> Bool in return item == key }
         cache.insert((key, value), at:0)
         if cache.count > size {
-            let _ = cache.popLast()
+            cache.removeLast()
         }
     }
 }
