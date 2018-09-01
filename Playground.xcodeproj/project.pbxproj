@@ -7,28 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DAF4E2F4213AC0A300F47010 /* Playground.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF4E2F3213AC0A300F47010 /* Playground.swift */; };
+		DAF4E30B213AC19900F47010 /* LruCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF4E30A213AC19900F47010 /* LruCache.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		DAF4E2EE213AC0A300F47010 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "include/$(PRODUCT_NAME)";
-			dstSubfolderSpec = 16;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		DAF4E2F0213AC0A300F47010 /* libPlayground.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPlayground.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		DAF4E2F3213AC0A300F47010 /* Playground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playground.swift; sourceTree = "<group>"; };
+		DAF4E301213AC0FB00F47010 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAF4E309213AC16B00F47010 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAF4E30A213AC19900F47010 /* LruCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LruCache.swift; sourceTree = "<group>"; };
+		DAF4E30C213AC1F500F47010 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		DAF4E30D213AC20E00F47010 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = "<none>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		DAF4E2ED213AC0A300F47010 /* Frameworks */ = {
+		DAF4E2FE213AC0FB00F47010 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,46 +32,33 @@
 		DAF4E2E7213AC0A300F47010 = {
 			isa = PBXGroup;
 			children = (
-				DAF4E2F2213AC0A300F47010 /* Playground */,
-				DAF4E2F1213AC0A300F47010 /* Products */,
+				DAF4E30A213AC19900F47010 /* LruCache.swift */,
+				DAF4E309213AC16B00F47010 /* Info.plist */,
+				DAF4E301213AC0FB00F47010 /* Tests.xctest */,
+				DAF4E30D213AC20E00F47010 /* README.md */,
+				DAF4E30C213AC1F500F47010 /* .gitignore */,
 			);
-			sourceTree = "<group>";
-		};
-		DAF4E2F1213AC0A300F47010 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				DAF4E2F0213AC0A300F47010 /* libPlayground.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		DAF4E2F2213AC0A300F47010 /* Playground */ = {
-			isa = PBXGroup;
-			children = (
-				DAF4E2F3213AC0A300F47010 /* Playground.swift */,
-			);
-			path = Playground;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DAF4E2EF213AC0A300F47010 /* Playground */ = {
+		DAF4E300213AC0FB00F47010 /* Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DAF4E2F7213AC0A300F47010 /* Build configuration list for PBXNativeTarget "Playground" */;
+			buildConfigurationList = DAF4E306213AC0FB00F47010 /* Build configuration list for PBXNativeTarget "Tests" */;
 			buildPhases = (
-				DAF4E2EC213AC0A300F47010 /* Sources */,
-				DAF4E2ED213AC0A300F47010 /* Frameworks */,
-				DAF4E2EE213AC0A300F47010 /* CopyFiles */,
+				DAF4E2FD213AC0FB00F47010 /* Sources */,
+				DAF4E2FE213AC0FB00F47010 /* Frameworks */,
+				DAF4E2FF213AC0FB00F47010 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Playground;
-			productName = Playground;
-			productReference = DAF4E2F0213AC0A300F47010 /* libPlayground.a */;
-			productType = "com.apple.product-type.library.static";
+			name = Tests;
+			productName = Tests;
+			productReference = DAF4E301213AC0FB00F47010 /* Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -92,8 +70,9 @@
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = iturbide;
 				TargetAttributes = {
-					DAF4E2EF213AC0A300F47010 = {
+					DAF4E300213AC0FB00F47010 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -105,21 +84,31 @@
 				en,
 			);
 			mainGroup = DAF4E2E7213AC0A300F47010;
-			productRefGroup = DAF4E2F1213AC0A300F47010 /* Products */;
+			productRefGroup = DAF4E2E7213AC0A300F47010;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DAF4E2EF213AC0A300F47010 /* Playground */,
+				DAF4E300213AC0FB00F47010 /* Tests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		DAF4E2FF213AC0FB00F47010 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		DAF4E2EC213AC0A300F47010 /* Sources */ = {
+		DAF4E2FD213AC0FB00F47010 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAF4E2F4213AC0A300F47010 /* Playground.swift in Sources */,
+				DAF4E30B213AC19900F47010 /* LruCache.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,27 +231,40 @@
 			};
 			name = Release;
 		};
-		DAF4E2F8213AC0A300F47010 /* Debug */ = {
+		DAF4E307213AC0FB00F47010 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7AMWG3RLHN;
-				OTHER_LDFLAGS = "-ObjC";
+				INFOPLIST_FILE = Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = iturbide.Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		DAF4E2F9213AC0A300F47010 /* Release */ = {
+		DAF4E308213AC0FB00F47010 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7AMWG3RLHN;
-				OTHER_LDFLAGS = "-ObjC";
+				INFOPLIST_FILE = Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = iturbide.Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -280,11 +282,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DAF4E2F7213AC0A300F47010 /* Build configuration list for PBXNativeTarget "Playground" */ = {
+		DAF4E306213AC0FB00F47010 /* Build configuration list for PBXNativeTarget "Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DAF4E2F8213AC0A300F47010 /* Debug */,
-				DAF4E2F9213AC0A300F47010 /* Release */,
+				DAF4E307213AC0FB00F47010 /* Debug */,
+				DAF4E308213AC0FB00F47010 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
