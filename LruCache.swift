@@ -26,8 +26,7 @@ class LruCache {
 
 class TestLruCache:XCTestCase {
     func testNonExistingKey() {
-        let cache = LruCache(size:0)
-        XCTAssertEqual(-1, cache.get(key:"a"))
+        XCTAssertEqual(-1, LruCache(size:0).get(key:"a"))
     }
     
     func testReleaseCapacity() {
