@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA5C9BA42189BA0000CE1A90 /* Greeting.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5C9BA32189BA0000CE1A90 /* Greeting.swift */; };
 		DAF4E30B213AC19900F47010 /* LruCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF4E30A213AC19900F47010 /* LruCache.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DA5C9BA32189BA0000CE1A90 /* Greeting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Greeting.swift; sourceTree = "<group>"; };
 		DAF4E301213AC0FB00F47010 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAF4E309213AC16B00F47010 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAF4E30A213AC19900F47010 /* LruCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LruCache.swift; sourceTree = "<group>"; };
@@ -33,6 +35,7 @@
 			isa = PBXGroup;
 			children = (
 				DAF4E30A213AC19900F47010 /* LruCache.swift */,
+				DA5C9BA32189BA0000CE1A90 /* Greeting.swift */,
 				DAF4E309213AC16B00F47010 /* Info.plist */,
 				DAF4E301213AC0FB00F47010 /* Tests.xctest */,
 				DAF4E30D213AC20E00F47010 /* README.md */,
@@ -108,6 +111,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA5C9BA42189BA0000CE1A90 /* Greeting.swift in Sources */,
 				DAF4E30B213AC19900F47010 /* LruCache.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

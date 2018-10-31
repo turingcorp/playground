@@ -1,6 +1,6 @@
 import XCTest
 
-class LruCache {
+private class LruCache {
     private let size:Int
     private var cache:[(String, Int)] = []
     
