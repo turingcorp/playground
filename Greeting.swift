@@ -1,19 +1,36 @@
 import XCTest
 
 private class Greeting {
-    var messages = ["Hello %@!",
-                    "Nice to meet you!",
-                    "Echo tells your name %@, %@, %@...",
-                    "Im not going to say your name",
-                    "-_-",
-                    "%@ is a beautiful name"]
+    var messages:[[Language]] = [[Constant("Hello "), Name(), Constant("!")],
+        [Constant("Nice to meet you!")],
+        [Constant("Echo tells your name "), Name(), Constant(", "), Name(), Constant(", "), Name(), Constant("...")],
+        [Constant("Im not going to say your name")],
+        [Constant("-_-")],
+        [Name(), Constant(" is a beautiful name")]]
     
     @discardableResult func name(_ name:String) -> String {
         let message = messages.removeFirst()
         messages.append(message)
-        return String(format:message,
-                      arguments:Array(repeating:name, count:message.components(separatedBy:"%@").count - 1))
+        return message.reduce(String()) { return $0 + $1.messageFor(name) }
     }
+}
+
+private protocol Language {
+    func messageFor(_ name:String) -> String
+}
+
+private class Constant:Language {
+    let message:String
+    
+    init(_ message:String) {
+        self.message = message
+    }
+    
+    func messageFor(_ name:String) -> String { return message }
+}
+
+private class Name:Language {
+    func messageFor(_ name:String) -> String { return name }
 }
 
 class TestGreeting:XCTestCase {
