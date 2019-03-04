@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		209D2AA0222D22D000175C62 /* Fibo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209D2A9F222D22D000175C62 /* Fibo.swift */; };
 		20BF0D092211AFC900FFB775 /* Fibonacci.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BF0D082211AFC900FFB775 /* Fibonacci.swift */; };
 		DA5C9BA42189BA0000CE1A90 /* Greeting.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5C9BA32189BA0000CE1A90 /* Greeting.swift */; };
 		DAF4E30B213AC19900F47010 /* LruCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF4E30A213AC19900F47010 /* LruCache.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		209D2A9F222D22D000175C62 /* Fibo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fibo.swift; sourceTree = "<group>"; };
 		20BF0D082211AFC900FFB775 /* Fibonacci.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fibonacci.swift; sourceTree = "<group>"; };
 		DA5C9BA32189BA0000CE1A90 /* Greeting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Greeting.swift; sourceTree = "<group>"; };
 		DAF4E301213AC0FB00F47010 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +38,7 @@
 		DAF4E2E7213AC0A300F47010 = {
 			isa = PBXGroup;
 			children = (
+				209D2A9F222D22D000175C62 /* Fibo.swift */,
 				DAF4E30A213AC19900F47010 /* LruCache.swift */,
 				20BF0D082211AFC900FFB775 /* Fibonacci.swift */,
 				DA5C9BA32189BA0000CE1A90 /* Greeting.swift */,
@@ -115,6 +118,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA5C9BA42189BA0000CE1A90 /* Greeting.swift in Sources */,
+				209D2AA0222D22D000175C62 /* Fibo.swift in Sources */,
 				DAF4E30B213AC19900F47010 /* LruCache.swift in Sources */,
 				20BF0D092211AFC900FFB775 /* Fibonacci.swift in Sources */,
 			);
